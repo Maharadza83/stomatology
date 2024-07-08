@@ -1,0 +1,5 @@
+<div class="grid grid-cols-4 gap-x-1">
+  @for (doctor of doctors; track doctor.name) {
+    <app-doctor-card [doctor]="doctor"/>
+  }
+</div>

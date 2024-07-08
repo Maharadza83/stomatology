@@ -1,0 +1,111 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@NFZ/*": [
+        "app/*"
+      ],
+      "@NFZ/animations/*": [
+        "app/animations/*"
+      ],
+      "@NFZ/core/*": [
+        "app/core/*"
+      ],
+      "@NFZ/directives/*": [
+        "app/directives/*"
+      ],
+      "@NFZ/guards/*": [
+        "app/guards/*"
+      ],
+      "@NFZ/shell/*": [
+        "app/shell/*"
+      ],
+      "@NFZ/interceptors/*": [
+        "app/interceptors/*"
+      ],
+      "@NFZ/interfaces/*": [
+        "app/interfaces/*"
+      ],
+      "@NFZ/pipes/*": [
+        "app/pipes/*"
+      ],
+      "@NFZ/providers/*": [
+        "app/providers/*"
+      ],
+      "@NFZ/resolvers/*": [
+        "app/resolvers/*"
+      ],
+      "@NFZ/services/*": [
+        "app/services/*"
+      ],
+      "@NFZ/stores/*": [
+        "app/stores/*"
+      ],
+      "@NFZ/styles/*": [
+        "app/styles/*"
+      ],
+      "@NFZ/types/*": [
+        "app/types/*"
+      ],
+      "@NFZ/ui/*": [
+        "app/ui/*"
+      ],
+      "@NFZ/utils/*": [
+        "app/utils/*"
+      ],
+      "@NFZ/assets/*": [
+        "app/assets/*"
+      ],
+      "@NFZ/env/*": [
+        "environments/*"
+      ],
+      "@NFZ/models/*": [
+        "app/models/*"
+      ]
+    },
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "lib": [
+      "ES2022",
+      "dom"
+    ],
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "listEmittedFiles": true,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
+    "diagnostics": true,
+    "extendedDiagnostics": true,
+    "removeComments": true,
+    "useDefineForClassFields": false,
+    "skipLibCheck": true
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  },
+  "exclude": [
+    "server.ts"
+  ]
+}
