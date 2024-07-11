@@ -1,0 +1,26 @@
+.view-hero {
+  min-height: calc(100vh - 64px);
+}
+
+.choice {
+  &__shadow {
+    transition: all 0.3s ease-in-out;
+    opacity: 0.3;
+    z-index: 2;
+  }
+
+  &__img {
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    .choice__shadow {
+      opacity: 0.2;
+    }
+
+    .choice__img {
+      transform: scale(110%);
+    }
+  }
+}
