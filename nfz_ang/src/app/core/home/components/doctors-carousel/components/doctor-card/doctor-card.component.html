@@ -1,17 +1,13 @@
-<div class="flex flex-col justify-center gap-y-2 px-20 bg-sky-50 rounded-2xl w-10/12">
-  <img [src]="doctor().imageUrl" alt="doktorek" class="w-full ">
-  <div class=" text-3xl font-bold">
-    {{ doctor().name }}
-  </div>
-  <div class="text-gray-600">
-    {{ doctor().title }}
-  </div>
-  <div class="">
-    {{ doctor().description }}
-  </div>
-
+<div class="w-full flex flex-col justify-center items-center gap-y-8">
+  <a class="relative flex flex-col items-center bg-white rounded shadow-lg overflow-hidden p-2 border border-white choice" style="width: 276px;">
+    <div class="relative w-[256px] h-[256px] overflow-hidden rounded mb-4">
+      <div class="absolute w-full h-full bg-gray-950 choice__shadow"></div>
+      <img class="w-full h-full object-cover rounded choice__img" [src]="doctor().imageUrl" alt="doktorek">
+    </div>
+    <div class="w-full">
+      <h4 class="text-xl font-bold text-gray-800">{{ doctor().name }}</h4>
+      <h5 class="text-lg font-bold text-gray-600 mt-1">{{ doctor().title }}</h5>
+      <h6 class="text-sm font-bold text-gray-500 mt-1">{{ doctor().description }}</h6>
+    </div>
+  </a>
 </div>
-
-
-
-

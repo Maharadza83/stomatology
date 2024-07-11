@@ -14,6 +14,11 @@ export const routes: Routes = [
       },
 
       {
+        path: 'about',
+        loadChildren: () => import('@NFZ/core/about/about-routes'),
+      },
+
+      {
         path: '**',
         redirectTo: '',
         pathMatch: 'full',
