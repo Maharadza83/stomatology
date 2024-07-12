@@ -1,12 +1,14 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input, InputSignal } from '@angular/core';
 import { IDoctor } from '@NFZ/models/i-doctor';
 
 @Component({
   selector: 'app-doctor-card',
+  standalone: true,
+  imports: [],
   templateUrl: './doctor-card.component.html',
-  styleUrls: [ './doctor-card.component.scss' ],
+  styleUrl: './doctor-card.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DoctorCardComponent {
-  @Input() doctor!: IDoctor;
+  public doctor: InputSignal<IDoctor> = input();
 }

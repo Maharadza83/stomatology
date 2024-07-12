@@ -1,9 +1,5 @@
-<div class="swiper-container">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide" *ngFor="let doctor of doctors">
-      <app-doctor-card [doctor]="doctor"></app-doctor-card>
-    </div>
-  </div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
+<div class="grid grid-cols-4 gap-x-1 gap-y-20">
+  @for (doctor of doctors; track doctor.name) {
+    <app-doctor-card [doctor]="doctor"/>
+  }
 </div>
