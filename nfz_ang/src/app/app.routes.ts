@@ -18,10 +18,14 @@ export const routes: Routes = [
         loadChildren: () => import('@NFZ/core/about/about-routes'),
       },
 
-
       {
         path: 'contact',
         loadChildren: () => import('@NFZ/core/contact/contact-routes'),
+      },
+
+      {
+        path: 'faq',
+        loadChildren: () => import('@NFZ/core/faq/faq-routes'),
       },
 
       {
