@@ -1,5 +1,19 @@
-<div class="grid grid-cols-4 gap-x-1 gap-y-20">
-  @for (doctor of doctors; track doctor.name) {
-    <app-doctor-card [doctor]="doctor"/>
+<div class="grid grid-cols-3 gap-x-1 gap-y-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+  @for (doctor of displayedDoctors(); track doctor.name) {
+    <app-doctor-card @doctorsCarouselAnimation [doctor]="doctor"/>
   }
+
+  <button
+    class="absolute -left-2 top-1/2 -translate-y-1/2 text-5xl"
+    (click)="previousPage()"
+    type="button"> <
+  </button>
+
+  <button class="absolute -right-2 top-1/2 -translate-y-1/2 text-5xl"
+          (click)="nextPage()"
+          type="button"> >
+  </button>
+
 </div>
+
+
