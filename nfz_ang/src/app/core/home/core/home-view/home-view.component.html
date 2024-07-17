@@ -1,22 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Strona Główna</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twentytwenty/1.0.0/twentytwenty.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/2.0.0/jquery.event.move.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twentytwenty/1.0.0/jquery.twentytwenty.min.js"></script>
-  <style>
-    .twentytwenty-container {
-      width: 100%;
-      height: auto;
-    }
-  </style>
-</head>
-<body class="bg-gray-100">
 <div class="w-full mx-auto bg-sky-50">
   <div class="flex flex-col lg:pt-0 lg:pb-5 lg:flex-row items-center lg:justify-between px-5 py-10 view-hero">
     <div class="max-w-lg lg:ml-80 mb-10 lg:mb-0">
@@ -46,8 +27,9 @@
       </div>
       <div class="max-w-lg lg:mr-80 mb-10 lg:mb-0">
         <h2 class="text-3xl font-semibold mb-4">O nas</h2>
-        <p class="text-gray-600 mb-4">
-          Oferujemy szeroki zakres usług oraz dbamy o dobre samopoczucie pacjenta podczas każdej wizyty. Zwracamy uwagę na praktyczność oraz estetykę wykonywanego uzupełnienia, jak i zakładanych protez. Wybielamy, leczymy i prostujemy zęby, aby każdy pacjent mógł szeroko się uśmiechać. Dbamy o trwałość wykonywanych usług. Wyróżnia nas indywidualne podejście do każdej osoby. Zajmujemy się leczeniem nie tylko dorosłych, ale też dzieci, które traktujemy ze szczególną troską, dlatego u nas czują się one bezpiecznie i nie boją się wizyt. Można liczyć na naszą trafną diagnozę oraz sugerowanie pacjentom najlepszych rozwiązań.
+        <p class="text-gray-600 mb-4 mx-auto">
+          Oferujemy szeroki zakres usług oraz dbamy o dobre samopoczucie pacjenta podczas każdej wizyty. Zwracamy uwagę na praktyczność oraz estetykę wykonywanego uzupełnienia, jak i zakładanych protez. Wybielamy, leczymy i prostujemy zęby, aby każdy pacjent mógł szeroko się uśmiechać. Dbamy o trwałość wykonywanych usług. Wyróżnia nas indywidualne podejście do każdej osoby. Zajmujemy się leczeniem nie tylko dorosłych, ale też dzieci, które traktujemy ze szczególną troską, dlatego u nas czują się
+          one bezpiecznie i nie boją się wizyt. Można liczyć na naszą trafną diagnozę oraz sugerowanie pacjentom najlepszych rozwiązań.
         </p>
       </div>
     </div>
@@ -57,19 +39,19 @@
 
 <!-- Sekcja Przed i Po -->
 <div class="w-full mx-auto px-5 py-10 bg-white">
-  <h2 class="text-3xl font-semibold mb-6 text-center">The Best Possible Results</h2>
-  <p class="text-gray-600 text-center mb-10">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+  <h2 class="text-3xl font-semibold mb-6 text-center">Najlepsze możliwe rezultaty</h2>
+  <p class="text-gray-600 text-center mb-10 ">
+    Wybielanie zębów ma ogromny wpływ na życie i wygląd człowieka, ponieważ jasny, biały uśmiech zwiększa pewność siebie oraz poprawia relacje społeczne i zawodowe.
   </p>
-  <div class="twentytwenty-container">
-    <img src="path/to/your/before-image.jpg" alt="Before Whitening">
-    <img src="path/to/your/after-image.jpg" alt="After Whitening">
+  <div class="max-w-7xl mx-auto w-full">
+    <app-images-comparison/>
   </div>
+
 </div>
 
 <!-- Sekcja Opinii Pacjentów -->
 <div class="w-full mx-auto px-5 py-10 bg-white">
-  <h2 class="text-3xl font-semibold mb-6 text-center">Let's see our patients Feedback!</h2>
+  <h2 class="text-3xl font-semibold mb-6 text-center">Poznaj opinie naszych pacjentów!</h2>
   <p class="text-gray-600 text-center mb-10">
     On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the...
   </p>
@@ -92,20 +74,3 @@
     </div>
   </div>
 </div>
-
-<script>
-  $(document).ready(function() {
-    $(".twentytwenty-container").twentytwenty({
-      default_offset_pct: 0.5,
-      orientation: 'horizontal',
-      before_label: 'Before',
-      after_label: 'After',
-      no_overlay: false,
-      move_slider_on_hover: false,
-      move_with_handle_only: true,
-      click_to_move: false
-    });
-  });
-</script>
-</body>
-</html>
