@@ -29,6 +29,11 @@ export const routes: Routes = [
       },
 
       {
+        path: 'services',
+        loadChildren: () => import('@NFZ/core/dental-services/dental-services-routes'),
+      },
+
+      {
         path: '**',
         redirectTo: '',
         pathMatch: 'full',
