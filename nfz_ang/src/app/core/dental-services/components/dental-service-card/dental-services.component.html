@@ -1,0 +1,5 @@
+<div class="grid grid-cols-3 gap-x-1 gap-y-20 max-w-7xl mx-auto px-4 sm:px-6 pt-6 lg:px-8 relative">
+  @for (service of services; track service.name) {
+    <app-dental-service-card [service]="service"/>
+  }
+</div>
