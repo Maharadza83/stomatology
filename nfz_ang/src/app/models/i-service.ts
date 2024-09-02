@@ -4,3 +4,8 @@ export interface IService {
   imageUrl: string;
   type: string;
 }
+
+export interface IGroupedServices {
+  serviceName: string;
+  services: IService[];
+}
