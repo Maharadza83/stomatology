@@ -1,8 +1,11 @@
-<div class="items-center text-center" *ngFor="let group of groupedServices | keyvalue">
+<h1> Nasze usługi</h1>
+@for (group of groupedServices | keyvalue; track group.key){
+<div class="items-center text-center">
   <h2 class="text-2xl font-bold mt-8 mb-4">{{ group.key }}</h2>
   <div class="grid grid-cols-3 gap-x-1 gap-y-20 max-w-7xl mx-auto px-4 sm:px-6 pt-6 lg:px-8 relative">
-    <ng-container *ngFor="let service of group.value">
+    @for (service of group.value; track service.name) {
       <app-dental-service-card [service]="service"></app-dental-service-card>
-    </ng-container>
+    }
   </div>
 </div>
+}
