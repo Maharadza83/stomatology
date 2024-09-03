@@ -1,49 +1,18 @@
-<section class="bg-white text-black py-32 min-h-screen">
-  <div class="container flex flex-col justify-center p-4 mx-auto md:p-8">
-    <h2 class="mb-12 text-4xl font-bold text-center sm:text-5xl">Najczęściej Zadawane Pytania (FAQ)</h2>
-    <div class="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
-      <details>
-        <summary class="py-2 outline-none cursor-pointer focus:underline">Jak mogę umówić się na wizytę?</summary>
-        <div class="px-4 pb-4">
-          <p>Wizytę możesz umówić przez naszą stronę internetową, dzwoniąc bezpośrednio do gabinetu lub odwiedzając nas osobiście. Nasi pracownicy chętnie pomogą w wyborze dogodnego terminu.</p>
-        </div>
-      </details>
-      <details>
-        <summary class="py-2 outline-none cursor-pointer focus:underline">Jakie metody płatności są akceptowane?</summary>
-        <div class="px-4 pb-4">
-          <p>Akceptujemy różne metody płatności, w tym karty kredytowe, karty debetowe oraz przelewy bankowe. Możesz także zapłacić gotówką na miejscu.</p>
-        </div>
-      </details>
-      <details>
-        <summary class="py-2 outline-none cursor-pointer focus:underline">Jak długo trwa wizyta?</summary>
-        <div class="px-4 pb-4">
-          <p>Czas trwania wizyty zależy od rodzaju zabiegu. Standardowa konsultacja trwa zazwyczaj 30-60 minut. Dokładny czas wizyty zostanie ustalony podczas umawiania się na wizytę.</p>
-        </div>
-      </details>
-      <details>
-        <summary class="py-2 outline-none cursor-pointer focus:underline">Czy mogę odwołać lub przełożyć wizytę?</summary>
-        <div class="px-4 pb-4">
-          <p>Tak, w przypadku potrzeby odwołania lub przełożenia wizyty, prosimy o kontakt z naszym gabinetem z co najmniej 24-godzinnym wyprzedzeniem.</p>
-        </div>
-      </details>
-      <details>
-        <summary class="py-2 outline-none cursor-pointer focus:underline">Czy przyjmujecie pacjentów na NFZ?</summary>
-        <div class="px-4 pb-4">
-          <p>Obecnie przyjmujemy pacjentów prywatnych. Nie współpracujemy z Narodowym Funduszem Zdrowia (NFZ), jednak oferujemy atrakcyjne ceny i możliwość rozłożenia płatności na raty.</p>
-        </div>
-      </details>
-      <details>
-        <summary class="py-2 outline-none cursor-pointer focus:underline">Jakie usługi stomatologiczne oferujecie?</summary>
-        <div class="px-4 pb-4">
-          <p>Oferujemy szeroki zakres usług stomatologicznych, w tym stomatologię zachowawczą, protetykę, chirurgię stomatologiczną, ortodoncję oraz wybielanie zębów. Pełna lista usług jest dostępna na naszej stronie internetowej.</p>
-        </div>
-      </details>
-      <details>
-        <summary class="py-2 outline-none cursor-pointer focus:underline">Jakie są wasze godziny otwarcia?</summary>
-        <div class="px-4 pb-4">
-          <p>Nasze godziny otwarcia to od poniedziałku do piątku od 8:00 do 18:00 oraz w soboty od 9:00 do 14:00. Jesteśmy zamknięci w niedziele i święta.</p>
-        </div>
-      </details>
+<section class="py-24">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mb-16">
+      <h6 class="text-lg text-indigo-600 font-medium text-center mb-2">
+        Najczęściej Zadawane Pytania (FAQ)
+      </h6>
+      <h2 class="text-4xl font-manrope text-center font-bold text-gray-900 leading-[3.25rem]">
+        Frequently asked questions
+      </h2>
+    </div>
+
+    <div>
+      @for (question of faqs; track question.question) {
+        <app-faq-question [faq]="question" />
+      }
     </div>
   </div>
 </section>

@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, inject, Signal } from '@angular/cor
 import { CommonModule, KeyValuePipe } from '@angular/common';
 import { IGroupedServices } from '@NFZ/models/i-service';
 import { DentalServicesViewComponent } from './components/dental-service-card-info/dental-service-card.component';
-import { DoctorCardComponent } from '../../../home/components/doctors-carousel/components/doctor-card/doctor-card.component';
+import { DoctorCardComponent } from '@NFZ/ui/doctor-card/doctor-card.component';
 import { DentalServicesService } from '@NFZ/services/dental-services.service';
 import { toSignal } from '@angular/core/rxjs-interop';
 

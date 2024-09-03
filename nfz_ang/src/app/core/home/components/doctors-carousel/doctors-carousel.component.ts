@@ -1,7 +1,8 @@
 import { ChangeDetectionStrategy, Component, computed, signal, Signal, WritableSignal } from '@angular/core';
-import { DoctorCardComponent } from './components/doctor-card/doctor-card.component';
+import { DoctorCardComponent } from '@NFZ/ui/doctor-card/doctor-card.component';
 import { IDoctor } from '@NFZ/models/i-doctor';
 import { DOCTORS_CAROUSEL_ANIMATION } from './components/doctors-carousel.animate';
+import { DOCTORS } from '../../../../const/doctors.const';
 
 @Component({
   selector: 'app-doctors-carousel',
@@ -15,6 +16,8 @@ import { DOCTORS_CAROUSEL_ANIMATION } from './components/doctors-carousel.animat
   animations: [ DOCTORS_CAROUSEL_ANIMATION ],
 })
 export class DoctorsCarouselComponent {
+  public doctors: IDoctor[] = DOCTORS
+
   public readonly displayedDoctors: Signal<IDoctor[]> = computed(() => {
     const start = this.currentPage() * this.pageSize();
     const end = start + this.pageSize();
@@ -35,45 +38,5 @@ export class DoctorsCarouselComponent {
       this.currentPage.set(this.currentPage() - 1);
     }
   }
-
-
-  public readonly doctors: IDoctor[] = [
-    {
-      name: 'Richard Muldoon',
-      title: 'Practical Nurse',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      imageUrl: 'assets/z (1).jpg',
-    },
-    {
-      name: 'Michael Brian',
-      title: 'Patient Services Manager',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      imageUrl: 'assets/z (2).jpg',
-    },
-    {
-      name: 'Maria Andaloro',
-      title: 'Dental Hygienist',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      imageUrl: 'assets/z (3).jpg',
-    },
-    {
-      name: 'Martha Schmidt',
-      title: 'Dentist',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      imageUrl: 'assets/z (4).jpg',
-    },
-    {
-      name: 'John Doe',
-      title: 'Cardiologist',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      imageUrl: 'assets/z (5).jpg',
-    },
-    {
-      name: 'Jane Smith',
-      title: 'Neurologist',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      imageUrl: 'assets/z (6).jpg',
-    },
-  ];
 }
 

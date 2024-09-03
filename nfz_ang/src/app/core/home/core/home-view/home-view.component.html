@@ -1,39 +1,43 @@
 <div class="w-full mx-auto bg-sky-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
   <div class="flex flex-col lg:pt-0 lg:pb-5 lg:flex-row items-center lg:justify-between px-5 py-10 view-hero">
-    <div class="max-w-lg lg:ml-80 mb-10 lg:mb-0">
+    <div class="mb-10 lg:mb-0 w-full lg:w-6/12">
       <h1 class="text-5xl font-bold mb-4 ">Zacznij swój dzień <br> od pięknego uśmiechu</h1>
       <p class="text-gray-600 text-xl mb-6">
         Nasz salon stomatologiczny oferuje szeroką gamę usług, które pomogą Ci osiągnąć zdrowy i piękny uśmiech. Zaufaj naszym specjalistom, którzy dzięki nowoczesnym technologiom i indywidualnemu podejściu zadbają o Twoje zęby i komfort. U nas każdy pacjent jest wyjątkowy!
       </p>
       <button class="bg-custom-blue text-white text-lg py-2 px-4 rounded">Zobacz więcej</button>
     </div>
-    <div class="max-w-2xl lg:mr-80">
+    <div class="w-full lg:w-6/12">
       <img src="assets/model.png" alt="Smiling woman giving thumbs up" class="rounded-lg">
     </div>
   </div>
   <div class="w-full mx-auto px-5 bg-white py-5">
-    <div class="flex flex-col lg:flex-row justify-between py-16 items-center">
-      <div class="max-w-lg lg:ml-80">
-        <div class="flex items-center p-5 bg-sky-50 rounded-lg">
-          <img src="assets/doctorj.jpg" alt="Agnieszka Majcher" class="w-52 rounded-2xl mr-5">
-          <div>
-            <h3 class="text-xl font-semibold mb-2">Agnieszka Majcher</h3>
-            <p class="text-gray-600 mb-2">lekarz stomatolog, założycielka</p>
-            <p class="text-gray-600">
-              W roku 2001 ukończyła Pomorską Akademię Medyczną w Szczecinie. Specjalizuje się w stomatologii zachowawczej, estetycznej, protetyce oraz endodoncji.
-            </p>
-          </div>
+    <div class="flex flex-col lg:flex-row max-w-7xl mx-auto justify-center py-16 items-center gap-x-6">
+      <div class="flex items-center p-5 bg-sky-50 rounded-lg w-full lg:w-5/12">
+        <img src="assets/doctorj.jpg" alt="Agnieszka Majcher" class="w-52 rounded-2xl mr-5">
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Agnieszka Majcher</h3>
+          <p class="text-gray-600 mb-2">lekarz stomatolog, założycielka</p>
+          <p class="text-gray-600">
+            W roku 2001 ukończyła Pomorską Akademię Medyczną w Szczecinie. Specjalizuje się w stomatologii zachowawczej, estetycznej, protetyce oraz endodoncji.
+          </p>
         </div>
       </div>
-      <div class="max-w-lg lg:mr-80 mb-10 lg:mb-0">
+      <div class="mb-10 lg:mb-0 w-full lg:w-7/12">
         <h2 class="text-3xl font-semibold mb-4">O nas</h2>
         <p class="text-gray-600 mb-4 mx-auto">
           Oferujemy szeroki zakres usług oraz dbamy o dobre samopoczucie pacjenta podczas każdej wizyty. Zwracamy uwagę na praktyczność oraz estetykę wykonywanego uzupełnienia, jak i zakładanych protez. Wybielamy, leczymy i prostujemy zęby, aby każdy pacjent mógł szeroko się uśmiechać. Dbamy o trwałość wykonywanych usług. Wyróżnia nas indywidualne podejście do każdej osoby. Zajmujemy się leczeniem nie tylko dorosłych, ale też dzieci, które traktujemy ze szczególną troską, dlatego u nas czują się
           one bezpiecznie i nie boją się wizyt. Można liczyć na naszą trafną diagnozę oraz sugerowanie pacjentom najlepszych rozwiązań.
         </p>
+
+        <a routerLink="/about">
+          <button class="bg-custom-blue text-white text-lg py-2 px-4 rounded">Czytaj więcej</button>
+        </a>
       </div>
     </div>
     <app-doctors-carousel></app-doctors-carousel>
+  </div>
   </div>
 </div>
 
@@ -54,10 +58,10 @@
   <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
   <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
   <div class="mx-auto max-w-2xl lg:max-w-4xl">
-    <img class="mx-auto h-12" src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg" alt="">
-    <figure class="mt-10">
+    <img class="mx-auto h-52" src="assets/google.png" alt="google maps">
+    <figure class="mt-2">
       <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
-        <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”</p>
+        <p>“Jestem niezwykle zadowolony z usług świadczonych w tym gabinecie stomatologicznym. Profesjonalizm, troska o pacjenta i nowoczesne podejście do leczenia to cechy, które wyróżniają ten zespół. Atmosfera jest zawsze przyjazna, a każdy zabieg przeprowadzany jest z najwyższą starannością. Polecam każdemu, kto szuka rzetelnej i kompleksowej opieki stomatologicznej.”</p>
       </blockquote>
       <figcaption class="mt-10">
         <img class="mx-auto h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
