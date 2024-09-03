@@ -1,0 +1,31 @@
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="section py-8 flex items-center">
+    <div class="h-96 w-96 aspect-square overflow-hidden">
+      <img class="h-full object-cover" [src]="dentalService().imageUrl"/>
+    </div>
+
+    <div class="w-16 h-64 bg-blue-400">
+    </div>
+
+    <div class="ps-8 flex flex-col article">
+      <h2 class="text-3xl font-semibold tracking-wide">
+        {{ dentalService().name }}
+      </h2>
+
+      @for (node of dentalService().article; track node) {
+        @switch (node.type) {
+          @case ('heading') {
+            <p class="text-xl font-semibold mt-4">
+              {{ node.children[0].text }}
+            </p>
+          }
+          @case ('paragraph') {
+            <p class="text-gray-800">
+              {{ node.children[0].text }}
+            </p>
+          }
+        }
+      }
+    </div>
+  </div>
+</div>

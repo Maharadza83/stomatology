@@ -4,7 +4,8 @@
   "info": {
     "singularName": "service",
     "pluralName": "services",
-    "displayName": "Service"
+    "displayName": "Service",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,14 +23,15 @@
       "required": true
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "article": {
       "type": "blocks",
@@ -42,6 +44,11 @@
         "treatment",
         "diagnostics"
       ]
+    },
+    "link": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }
