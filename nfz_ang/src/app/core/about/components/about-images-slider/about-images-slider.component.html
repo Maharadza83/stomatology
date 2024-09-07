@@ -1,5 +1,6 @@
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-blue-50">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 mb-6 text-gray-700 bg-gray-100 shadow-lg bg-clip-border rounded-xl ">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <h2 class="text-5xl font-bold text-center py-2">Galeria</h2>
     <swiper-container #swiper1 style="--swiper-navigation-color: #fff" init="false"
                       thumbs-swiper=".thumbs-slider" autoplay-delay="2500" autoplay-disable-on-interaction="false" loop="true" space-between="10" navigation="true">
       @for (item of items; track item) {
@@ -18,4 +19,4 @@
       }
     </swiper-container>
   </div>
-</div>
+ </div>
