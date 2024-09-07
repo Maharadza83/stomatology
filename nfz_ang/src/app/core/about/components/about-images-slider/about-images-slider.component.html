@@ -1,0 +1,21 @@
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-blue-50">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <swiper-container #swiper1 style="--swiper-navigation-color: #fff" init="false"
+                      thumbs-swiper=".thumbs-slider" autoplay-delay="2500" autoplay-disable-on-interaction="false" loop="true" space-between="10" navigation="true">
+      @for (item of items; track item) {
+        <swiper-slide class="w-full">
+          <img class="object-cover w-full" [src]="item.imgUrl"/>
+        </swiper-slide>
+      }
+    </swiper-container>
+
+    <swiper-container #swiper2 init="false" class="thumbs-slider mt-4" loop="false" space-between="10" slides-per-view="6" free-mode="true"
+                      watch-slides-progress="true">
+      @for (item of items; track item) {
+        <swiper-slide class="cursor-pointer">
+          <img class="object-cover aspect-square" [src]="item.imgUrl"/>
+        </swiper-slide>
+      }
+    </swiper-container>
+  </div>
+</div>
