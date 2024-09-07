@@ -1,7 +1,8 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { DoctorsCarouselComponent } from '../../../home/components/doctors-carousel/doctors-carousel.component';
-import {DOCTORS} from "@NFZ/const/doctors.const";
+import { DOCTORS } from '@NFZ/const/doctors.const';
 import { DoctorCardComponent } from '@NFZ/ui/doctor-card/doctor-card.component';
+import { AboutImagesSliderComponent } from '../../components/about-images-slider/about-images-slider.component';
 
 @Component({
   selector: 'app-about-view',
@@ -9,6 +10,7 @@ import { DoctorCardComponent } from '@NFZ/ui/doctor-card/doctor-card.component';
   imports: [
     DoctorsCarouselComponent,
     DoctorCardComponent,
+    AboutImagesSliderComponent,
   ],
   templateUrl: './about-view.component.html',
   styleUrl: './about-view.component.scss',
@@ -16,5 +18,5 @@ import { DoctorCardComponent } from '@NFZ/ui/doctor-card/doctor-card.component';
 })
 export class AboutViewComponent {
 
-    protected readonly DOCTORS = DOCTORS;
+  protected readonly DOCTORS = DOCTORS;
 }

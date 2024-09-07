@@ -5,7 +5,7 @@ import { MENU } from '@NFZ/shell/components/menu/menu.const';
 
 export interface IMenuItem {
   name: string;
-  routerLink: string
+  routerLink: string;
 }
 
 @Component({
@@ -18,13 +18,13 @@ export interface IMenuItem {
   ],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MenuComponent {
-  public isMenuVisible: WritableSignal<boolean> = signal(true)
+  public isMenuVisible: WritableSignal<boolean> = signal(false);
 
   public toggleMenu(): void {
-    this.isMenuVisible.update(state => !state)
+    this.isMenuVisible.update(state => !state);
   }
 
   protected readonly MENU = MENU;
